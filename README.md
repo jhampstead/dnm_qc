@@ -14,7 +14,7 @@ Building should generate the following executables in `build/`:
 1. DNMs that occur at multiallelic sites/in regions with many overlapping indel calls in proband, and
 2. Indels that are aligned differently in proband and parent because trios were not joint called.
 
-The program performs local Smith-Waterman alignment on overlapping indels and generates an alignment score. If the alignment score is greater than a threshold (set to the minimum length of the reference/alternate allele by default), the genotype of the proband is altered to reflect a heterozygous variant call so the variant is no longer called *de novo* by basic genotype filtering strategies. There are some issues with this approach generally, but as a quick and dirty way to get rid of these dodgy indels it does the job.
+The program performs local Smith-Waterman alignment on overlapping indels and generates an alignment score. If the alignment score is greater than a threshold (set to the minimum length of the reference/alternate allele by default), the genotype of the putative parent-of-origin is altered to reflect a heterozygous variant call so the variant is no longer called *de novo* by basic genotype filtering strategies. There are some issues with this approach generally, but as a quick and dirty way to get rid of these dodgy indels it does the job.
 
 ![Depiction of genotype modification in proband](https://i.imgur.com/R6IZds7.png)
 
