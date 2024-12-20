@@ -29,7 +29,7 @@ Score: 3>1	TTATA>A
 `infer_pileup` expects two command line arguments: an input VCF `<vcf_in>` and an output VCF `<vcf_out>`. `<vcf_in>` is expected to be a merged trio VCF containing the genotypes of the proband and both parents, where the proband is expected to be GT[0]. These VCFs can be compressed or uncompressed, indexed or unindexed. Multiallelic sites can be split or unsplit. For testing, merged trio VCFs were generated using `bcftools`:
 
 ```
-bcftools merge --missing-to-ref proband.vcf mother.vcf father.vcf -Oz -o output.vcf]
+bcftools merge --missing-to-ref proband.vcf mother.vcf father.vcf -Oz -o output.vcf
 ```
 
 ## find_adjacent_variants
