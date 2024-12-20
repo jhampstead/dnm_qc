@@ -48,7 +48,7 @@ Variants that do not have other variants co-occuring within the specified radius
 * A radius in which to look for adjacent variants,
 * An output VCF file
 
-Similar to previous, VCFs can be compressed or uncompressed, indexed or unindexed. Multiallelic sites can be split or unsplit. `<vcf_in>` can be a single- or multi-sample VCF file, but note the program will consider co-occurring variants across all samples in the VCF file (so if the mother has an indel called at position 5 and the proband has an indel called at position 10, these calls will both have FORMAT/MNV = 1).
+Similar to previous, VCFs can be compressed or uncompressed, indexed or unindexed. Multiallelic sites can be split or unsplit. `<vcf_in>` can be a single- or multi-sample VCF file, but note the program will consider co-occurring variants across all samples in the VCF file (so if individual A has an indel called at position 5 and individual B has an indel called at position 10, these calls will both have FORMAT/MNV = 1).
 
 ## annotate_bed_regions
 
